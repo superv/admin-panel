@@ -1,0 +1,19 @@
+{
+    "name": "superv/admin-panel",
+    "type": "superv-panel",
+    "autoload": {
+        "psr-4": {
+            "SuperV\\Panels\\Admin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require": {
+        "superv/platform": "0.*|dev-*"
+    },
+    "minimum-stability": "dev"
+}
+
