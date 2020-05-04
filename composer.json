@@ -12,7 +12,19 @@
         }
     },
     "require": {
-        "superv/platform": "0.*|dev-*"
+        "superv/platform": "dev-develop|0.*",
+        "superv/composer-plugin": "*",
+        "superv/generator": "dev-master"
+    },
+    "repositories": [
+    
+    ],
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "addons/superv/panels/admin/tools/*/*/composer.json"
+            ]
+        }
     },
     "minimum-stability": "dev"
 }

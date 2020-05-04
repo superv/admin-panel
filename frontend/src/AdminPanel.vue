@@ -17,7 +17,7 @@ export default {
   name: 'AdminPanel',
   components: { SvSiteHeader, SvSidebar, LayoutDefault },
   created() {
-    // this.$sv.$layout.tabsActive = true
+    this.$sv.$layout.tabsActive = true
   },
 }
 </script>
