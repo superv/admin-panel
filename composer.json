@@ -12,8 +12,14 @@
         }
     },
     "require": {
-        "superv/platform": "0.*|dev-*"
+        "superv/platform": "^0.25"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true,
+            "wikimedia/composer-merge-plugin": true,
+            "superv/composer-plugin": true
+        }
+    }
 }
-
