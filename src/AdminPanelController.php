@@ -8,11 +8,11 @@ class AdminPanelController
 {
     public function __invoke()
     {
-        if (! $port = Panel::make('admin')->getPort()) {
+        if (! $port = Panel::make('superv.admin')->getPort()) {
             return 'Please specify a port for this panel';
         }
 
-        return view('admin::panel', [
+        return view('superv.admin::panel', [
             'config' => [
                 'apiUrl' => $port->url(),
                 'baseUrl' => 'admin'
