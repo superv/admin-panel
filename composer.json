@@ -12,20 +12,14 @@
         }
     },
     "require": {
-        "superv/platform": "dev-develop|0.*",
-        "superv/composer-plugin": "*",
-        "superv/generator": "dev-master"
+        "superv/platform": "^0.25"
     },
-    "repositories": [
-    
-    ],
-    "extra": {
-        "merge-plugin": {
-            "include": [
-                "addons/superv/panels/admin/tools/*/*/composer.json"
-            ]
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true,
+            "wikimedia/composer-merge-plugin": true,
+            "superv/composer-plugin": true
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
-
