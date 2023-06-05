@@ -12,14 +12,16 @@ class AdminPanelServiceProvider extends PanelServiceProvider
     {
         parent::boot();
 
-        $this->registerTools();
+//        $this->registerTools();
     }
 
     protected function registerTools(): void
     {
         $tool = new GeneratorTool(new AddonModel([
             'path' => $this->addon->path('tools/superv/generator'),
+          //  'path' => base_path('tools/superv/generator'),
         ]));
+
         $tool->boot();
     }
 }
